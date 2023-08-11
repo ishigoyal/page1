@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.left-side{
+    width: 15%;
+    background-color: #020296;
+}
+
+.right-side{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    grid-gap: 20px;
+    margin: 20px 20px;
+    grid-column-gap: 40px;
+    /* grid-auto-rows: minmax(10px, auto); */
+}
+
+.box{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+#main{
+    grid-column: 1 / -1;
+}
